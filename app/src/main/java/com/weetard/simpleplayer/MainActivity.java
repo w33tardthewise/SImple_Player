@@ -106,8 +106,6 @@ public class MainActivity extends AppCompatActivity  implements Runnable{
                 mediaPlayer.setLooping(false);
                 seekBar.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
-                int currentPosition = mediaPlayer.getCurrentPosition();
-                int total = mediaPlayer.getDuration();
                 mediaPlayer.seekTo(LastPosition);
                 new Thread(this).start();
             }
