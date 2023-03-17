@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity  implements Runnable{
                 } else if (timeTrack < 60){
                     seekBarHint.setText("00:" + timeTrack);
                 } else if (timeTrack >= 60) {
-                    seekBarHint.setText("01:0" + (timeTrack - 60));
+                    seekBarHint.setText("01:0" + (timeTrack - 70));
                 } else if (timeTrack >= 70) {
                     seekBarHint.setText("01:" + (timeTrack - 60));
                 }
