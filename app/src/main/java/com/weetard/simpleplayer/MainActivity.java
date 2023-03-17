@@ -53,7 +53,10 @@ public class MainActivity extends AppCompatActivity  implements Runnable{
                     seekBarHint.setText("00:" + timeTrack);
                 } else if (timeTrack >= 60) {
                     seekBarHint.setText("01:" + (timeTrack - 60));
+                } else if (timeTrack >= 70) {
+                    seekBarHint.setText("01:" + (timeTrack - 60));
                 }
+                
 
                 double percentTrack = progress / (double) seekBar.getMax();
                 seekBarHint.setX(seekBar.getX() + Math.round(seekBar.getWidth()*percentTrack*0.92));
